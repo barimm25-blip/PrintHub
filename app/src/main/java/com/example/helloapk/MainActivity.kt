@@ -194,9 +194,9 @@ fun ScanScreen(modifier: Modifier = Modifier) {
                 onClick = {
                     if (lastScanned.isEmpty()) return@Button
 
-                    // ใช้ qrBitmap ที่คุณสร้างไว้แล้วด้านบน
+
                     scope.launch {
-                        // 1) สร้าง PDF หน้า A4
+
                         val pdf = createA4PdfWithQr(context, qrBitmap, "qr_to_print_a4.pdf")
                         if (pdf == null) {
                             Toast.makeText(context, "สร้าง PDF ไม่สำเร็จ", Toast.LENGTH_LONG).show()
