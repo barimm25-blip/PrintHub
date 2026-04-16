@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- เราเซฟไว้ใน internal cache -->
+    <cache-path name="cache" path="." />
+    <!-- เผื่อกรณีอยากใช้ external cache ในอนาคต -->
+    <external-cache-path name="ext_cache" path="." />
+</paths>
